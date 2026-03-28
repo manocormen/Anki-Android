@@ -25,10 +25,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:title="@string/pref_cat_advanced"
     android:key="@string/pref_advanced_screen_key">
-        <EditTextPreference
+        <com.ichi2.preferences.VersatileTextPreference
             android:defaultValue="/sdcard/AnkiDroid"
             android:key="@string/pref_ankidroid_directory_key"
             android:title="@string/col_path"
+            app:dialogHint="@string/dialog_hint_directory"
             app:useSimpleSummaryProvider="true"/>
         <Preference
             android:summary="@string/reset_languages_summ"
